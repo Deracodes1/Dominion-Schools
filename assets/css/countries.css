@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.return-btn {
+  font-size: 1.5rem;
+  display: block;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: #f59e0b;
+  border-radius: 5px;
+  padding: 10px;
+  color: #1e3a8a;
+  width: fit-content;
+}
+.country-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+}
+.para {
+  color: #111827;
+  font-size: 1.7rem;
+}
+.search-country {
+  border-bottom: 1px solid #e5e7eb;
+  height: 4.5rem;
+  background: #fff;
+  margin-top: 2rem;
+  width: 30rem;
+  position: relative;
+  display: flex;
+}
+.fa-search-country {
+  font-size: 2rem;
+  color: #1e3a8a;
+  align-self: center;
+  cursor: pointer;
+  padding-left: 3px;
+  transition: color 0.3s ease;
+}
+.fa-search-country:hover {
+  color: #f59e0b;
+}
+.search-input-country {
+  width: 100%;
+  outline: none;
+  font-size: 1.3rem;
+  color: #111827;
+  background: transparent;
+  border: none;
+  padding-left: 0.7rem;
+}
+.search-input-country::placeholder {
+  color: #6b7280;
+  letter-spacing: 1.5px;
+}
+
+.countries {
+  /* margin-bottom: 8rem; */
+  display: flex;
+  font-size: 2rem;
+  flex-flow: row wrap;
+  margin-top: 15px;
+  gap: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.country {
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  width: 30rem;
+  border-radius: 0.7rem;
+  margin: 0;
+  /* overflow: hidden; */
+}
+.country__img {
+  width: 30rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.country__region {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
