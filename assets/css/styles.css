@@ -672,7 +672,9 @@ body {
     text-align: center;
   }
   .desc {
-    text-align: justify;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 1.5;
   }
   .stats {
     flex-direction: column;
