@@ -167,7 +167,7 @@ body {
   transform: translateY(8rem);
   z-index: -1000;
   opacity: 0;
-  filter: blur(2rem);
+  filter: blur(2.5rem);
   position: relative;
 }
 .logo h1 {

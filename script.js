@@ -23,7 +23,34 @@ trackProgressBar();
 typeWriter();
 activeNav();
 showSlides(); // Initialize slideshow
-
+// const programmingLanguages = document.getElementById("programming-languages");
+// const frameWorkEl = document.getElementById("framework");
+// console.log(programmingLanguages, frameWorkEl);
+// function recommendFrameWork(language) {
+//   if (language.toLowerCase() === "javascript") {
+//     return "React";
+//   }
+//   if (language.toLowerCase() === "python") {
+//     return "Django";
+//   }
+//   if (language.toLowerCase() === "php") {
+//     return "Laravel";
+//   }
+//   if (language.toLowerCase() === "java") {
+//     return "Spring Boot";
+//   }
+//   if (language.toLowerCase() === "dart") {
+//     return "Flutter";
+//   } else {
+//     return "learn html";
+//   }
+// }
+// programmingLanguages.addEventListener("change ", function () {
+//   console.log(programmingLanguages.value);
+//   frameWorkEl.textContent = `The Recommended FrameWork for ${
+//     programmingLanguages.value
+//   } is ${recommendFrameWork(programmingLanguages.value)}`;
+// });
 // const searchInput = document.querySelector(".search-input");
 
 // searchInput.addEventListener("input", function () {
