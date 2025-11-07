@@ -18,6 +18,8 @@ refreshBtn.addEventListener("click", async (e) => {
       adviceTextEl.textContent = `"${data.slip.advice}"`;
     }, 300);
   } catch (error) {
-    adviceTextEl.textContent = `${error.message}. Try again!`;
+    setTimeout(() => {
+      adviceTextEl.textContent = `${error.message}. Try again!`;
+    }, 500);
   }
 });
