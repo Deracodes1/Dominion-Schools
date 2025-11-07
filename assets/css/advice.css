@@ -2,4 +2,118 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "poppins";
+}
+body {
+  background-color: rgb(245, 245, 234);
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: white;
+  border-bottom: 1px solid rgb(248, 242, 242);
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.fa-user-graduate {
+  color: rgb(99, 99, 247);
+}
+.advice-section {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 5rem;
+}
+.advice-title {
+  color: rgb(99, 99, 247);
+  font-size: 1.5rem;
+}
+.advice-message {
+  color: rgb(70, 65, 65);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  min-height: 60px;
+}
+.advice-btn {
+  background-color: rgb(99, 99, 247);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin: 2.5rem auto 4rem auto;
+  display: block;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease, background-color 0.3s ease;
+}
+.advice-btn:hover {
+  transform: scale(1.01);
+  background-color: rgb(97, 97, 223);
+}
+.advice-btn i {
+  margin-right: 5px;
+}
+.advice-btn:active i {
+  animation: spin 0.5s linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+footer {
+  border-top: 1px solid lightgrey;
+  color: rgb(70, 65, 65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.navs li {
+  display: inline-flex;
+  list-style: none;
+  margin-left: 0.7rem;
+}
+.navs a {
+  color: rgb(70, 65, 65);
+}
+.socials i {
+  margin-left: 1rem;
+  color: rgb(70, 65, 65);
+}
+@media screen and (max-width: 450px) {
+  header {
+    text-align: left;
+    padding: 1.3rem 1rem;
+    font-size: 0.8rem;
+  }
+  .advice-section {
+    width: 95%;
+    padding: 2.5rem 10px;
+    margin-top: 5rem;
+  }
+  .advice-title {
+    font-size: 1.4rem;
+  }
+  .advice-message {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .foot-note {
+    font-size: 1.1rem;
+  }
 }
