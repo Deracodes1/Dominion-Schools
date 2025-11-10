@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap"
     />
-    <!-- <script type="module" defer src="country.js"></script> -->
+    <script type="module" defer src="country.js"></script>
     <title>Explore contries of the World</title>
   </head>
   <body>
@@ -51,7 +51,7 @@
           <button id="search-btn"><i class="fa fa-search"></i></button>
         </div>
       </section>
-      <section class="country-info hidden" id="country-info">
+      <section class="country-info" id="country-info">
         <div class="country-top">
           <div class="flag-container">
             <img src="" alt="conutry flag" id="country-flag" />
@@ -73,10 +73,16 @@
             <p class="value" id="population">125,700,000</p>
             <p>Population</p>
           </div>
-
+          <div class="info-card">
+            <h3>Official Languages</h3>
+            <div class="languages" id="languages">
+              <span>Japanese</span>
+            </div>
+          </div>
           <div class="info-card">
             <h3>Currency</h3>
             <p><span id="currency-name">Japanese Yen</span></p>
+            <p><span id="currency-symbol">¥</span></p>
             <p class="subtext" id="currency-code">JPY</p>
           </div>
 

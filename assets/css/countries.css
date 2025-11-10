@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-} */
-
 body {
   font-family: "poppins", sans-serif;
   background-color: #f6f8fc;
@@ -86,10 +81,24 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
-/* .hidden {
+.hidden {
   display: none;
-} */
-
+}
+.spinner {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(97, 97, 223);
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .country-top {
   display: flex;
   align-items: center;
@@ -127,15 +136,16 @@ body {
   font-size: 600;
   color: #2563eb;
 }
-.neighbors span {
+.neighbors span,
+.languages span {
   background-color: #e5e7eb;
   border-radius: 5px;
   padding: 0.3rem 0.7rem;
   margin: 0.2rem;
-  display: inline-block;
+  margin-bottom: 7px;
+  display: block;
   font-size: 0.9rem;
 }
-
 /* country fact-box styling */
 .fact-box {
   background-color: #e7f0ff;
@@ -188,12 +198,15 @@ body {
     font-size: 0.9rem;
   }
   .search-box input {
-    width: 160px;
+    width: 180px;
   }
   .flag-container img {
     width: 120px;
   }
   .info-grid {
     grid-template-columns: 1fr;
+  }
+  .languages span {
+    display: block;
   }
 }
