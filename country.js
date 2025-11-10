@@ -1,4 +1,4 @@
-const countriesContainer = document.querySelector(".countries");
+const countriesContainer = document.querySelector("main");
 
 const renderCountry = function (data, className = "") {
   const html = `

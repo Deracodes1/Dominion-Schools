@@ -543,6 +543,9 @@ body {
 
 /* media query */
 @media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
   .login-logo-section {
     display: flex;
     flex-direction: column;

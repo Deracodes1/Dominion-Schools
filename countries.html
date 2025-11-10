@@ -18,49 +18,101 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=poppins:wght@400;600&display=swap"
     />
-    <script type="module" defer src="country.js"></script>
-    <title>contries of the world</title>
+    <!-- <script type="module" defer src="country.js"></script> -->
+    <title>Explore contries of the World</title>
   </head>
   <body>
-    <header>
-      <a class="return-btn" href="index.html">Go back to home page</a>
+    <header class="header">
+      <div class="logo">
+        <img src="assets/img/MATER-AMABILIS-2-300x300.webp" alt="school-logo" />
+        <p>Dominion Schools</p>
+      </div>
+      <nav class="nav">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="#">About</a>
+        <a href="#">Resources</a>
+      </nav>
     </header>
-    <main class="country-container">
-        <p class="para">
-            Hello student, do you know you can get information about any country in
-            the world by simply searching the country's name
-          </p>
-          <div class="search-country">
-            <i class="fa fa-search fa-search-country"></i>
-            <input
-              class="search-input-country"
-              type="search"
-              name=""
-              id=""
-              placeholder="search country..."
-            />
-          </div>
-        <div class="countries">      
-          <!-- <article class="country ${className}">
-            <img class="country__img" src="${data.flag}" />
-            <div class="country__data">
-              <h3 class="country__name">${data.name}</h3>
-              <h4 class="country__region">${data.region}</h4>
-              <h5 class="country__subregion">sub-region: ${data.subregion}</h5>
-              <p class="country__row"><span>Capital:</span>${data.capital}</p>
-              <p class="country__row"><span>Regional Blocs:</span>${data.regionalBlocs[0].name} 
-              (${data.regionalBlocs[0].acronym})</p>
-              <p class="country__row"><span>Population:</span>${(
-                +data.population / 1000000
-              ).toFixed(1)} people</p>
-              <p class="country__row"><span>Language:</span>${data.languages[0].name}</p>
-              <p class="country__row"><span>Currency Name:</span>${data.currencies[0].name}</p>
-              <p class="country__row"><span>Currency Symbol:</span>${data.currencies[0].Symbol}</p>
-              <p class="country__row"><span>Currency Code:</span>${data.currencies[0].code}</p>
-              <p class="country__row"><span>Calling Code:</span>${data.callingCodes}</p>
-              <p class="country__row"><span>Timezone:</span>${data.Timezones[0]}</p>
-            </div>
-          </article> -->
+    <main>
+      <section class="hero">
+        <h1>Explore the World</h1>
+        <p class="intro-text">
+          Hello Student! Did you know you can discover interesting facts and
+          useful information about any country in the world by simply typing its
+          name below?
+        </p>
+        <div class="search-box">
+          <input
+            type="text"
+            name=""
+            id="search-input"
+            placeholder="Search for a country..."
+          />
+          <button id="search-btn"><i class="fa fa-search"></i></button>
         </div>
+      </section>
+      <section class="country-info hidden" id="country-info">
+        <div class="country-top">
+          <div class="flag-container">
+            <img src="" alt="conutry flag" id="country-flag" />
+          </div>
+          <div class="basic-info">
+            <h2 id="country-name">Japan</h2>
+            <p><strong>Capital:</strong><span id="capital">Tokyo</span></p>
+            <p><strong>Region:</strong><span id="region">Asia</span></p>
+            <p>
+              <strong>Sub-region:</strong
+              ><span id="subregion">Eastern Asia</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Demographics</h3>
+            <p class="value" id="population">125,700,000</p>
+            <p>Population</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Currency</h3>
+            <p><span id="currency-name">Japanese Yen</span></p>
+            <p class="subtext" id="currency-code">JPY</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Connectivity</h3>
+            <p>Calling Code:<span id="calling-Code">+81</span></p>
+            <p>Timezone: <span id="timezone">UTC+09:00</span></p>
+          </div>
+
+          <div class="info-card">
+            <h3>Regional Blocs</h3>
+            <p id="regional-blocs">None</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Neighboring Countries</h3>
+            <div class="neighbors" id="neighbors">
+              <span>China</span>
+              <span>South Korea</span>
+              <span>Russia</span>
+              <span>Taiwan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fact-box">
+          <h4>Did You Know?</h4>
+          <p id="fun-fact">
+            Japan has more than 1,500 earthquakes a year, while most are minor,
+            the country's infrastructure is built to withstand tremors.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&copy;2025 Dominion Schools. All rights reserved.</p>
+    </footer>
   </body>
 </html>
