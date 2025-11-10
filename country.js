@@ -46,6 +46,33 @@ async function fetchCountry(name) {
   }
 }
 // function to fetch random fact about country
+async function getCountryFact(countryName) {
+  try {
+    const res = await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${countryName}`
+    );
+    if (!res.ok) {
+      throw new Error(`No Fact found about ${countryName}`);
+    }
+    const data = await res.json();
+    console.log(data);
+    // extract a short interesting fact
+    const sentences = data.extract.split(". ");
+    const randomSentence =
+      sentences[Math.floor(Math.random() * sentences.length)];
+    return randomSentence + ".";
+  } catch (error) {
+    return `'could'nt find a fun fact right now - try another country`;
+  }
+}
+
+// function to render error message
+const renderError = function (msg, status = "") {
+  countryInfo.classList.add("hidden");
+  const errorHTML = `<p class="error" style="color:red; text-align:center; font-weight:600;">${status}: ${msg}. Try
+    searching again.</P>`;
+  document.querySelector("main").insertAdjacentHTML("beforeend", errorHTML);
+};
 
 // render data to UI
 function renderCountry(country) {
@@ -121,6 +148,14 @@ function renderCountry(country) {
   } else {
     neighborsEl.innerHTML = "<span>None</span>";
   }
+
+  // fetching and formatting a fun fact about the country
+  (async () => {
+    const fact = await getCountryFact(country.name.common);
+    factEl.textContent = fact;
+  })();
+
+  // smooth animation effect each time a new country is displayed
   countryInfo.classList.remove("fade-in");
   void countryInfo.offsetWidth;
   countryInfo.classList.add("fade-in");
@@ -137,11 +172,3 @@ searchBtn.addEventListener("keydown", (e) => {
     searchBtn.click();
   }
 });
-
-// function to render error message
-const renderError = function (msg, status = "") {
-  countryInfo.classList.add("hidden");
-  const errorHTML = `<p class="error" style="color:red; text-align:center; font-weight:600;">${status}: ${msg}. Try
-    searching again.</P>`;
-  document.querySelector("main").insertAdjacentHTML("beforeend", errorHTML);
-};
