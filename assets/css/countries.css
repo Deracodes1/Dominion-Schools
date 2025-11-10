@@ -161,6 +161,10 @@ body {
   color: #fff;
   transform: scale(1.05);
 }
+
+.neighbor-flag {
+  width: 30px;
+}
 /* country fact-box styling */
 .fact-box {
   background-color: #e7f0ff;

@@ -30,7 +30,6 @@ async function fetchCountry(name) {
   let responseStatus;
   try {
     const res = await fetch(`https://restcountries.com/v3.1/name/${name}`);
-    console.log(res);
     responseStatus = res.status;
     if (!res.ok) {
       throw new Error("Country not found");
@@ -39,8 +38,7 @@ async function fetchCountry(name) {
     setTimeout(() => {
       const spinnerHtml = document.querySelector(".spinner")?.remove();
       renderCountry(data[0]);
-      console.log(data[0]);
-    }, 500);
+    }, 1000);
   } catch (error) {
     const spinnerHtml = document.querySelector(".spinner")?.remove();
     renderError(error.message, responseStatus);
@@ -63,7 +61,7 @@ async function getCountryFact(countryName) {
       sentences[Math.floor(Math.random() * sentences.length)];
     return randomSentence + ".";
   } catch (error) {
-    return `'could'nt find a fun fact right now - try another country`;
+    return `Could'nt find a fun fact right now - try another country`;
   }
 }
 
@@ -134,13 +132,22 @@ function renderCountry(country) {
         const neighbors = await res.json();
         neighbors.forEach((neighbor) => {
           const span = document.createElement("span");
+          const neighborFlagEl = document.createElement("img");
+          neighborFlagEl.src = neighbor.flags?.svg;
+          neighborFlagEl.classList.add("neighbor-flag");
+          span.style.display = "flex";
+          span.style.alignItems = "center";
+          span.style.gap = "4px";
+          span.style.justifyContent = "center";
           span.textContent = neighbor.name.common;
           span.classList.add("neighbor");
+          console.log(neighborFlagEl);
           span.addEventListener("click", (e) => {
             searchInput.value = e.target.textContent;
             fetchCountry(neighbor.name.common);
           });
           neighborsEl.appendChild(span);
+          span.appendChild(neighborFlagEl);
         });
       } catch (error) {
         neighborsEl.innerHTML = "<span>unable to load neighbors</span>";
