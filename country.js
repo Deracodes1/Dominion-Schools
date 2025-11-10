@@ -1,5 +1,6 @@
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
+const refreshFactBtn = document.getElementById("refreshfact-btn");
 const countryInfo = document.getElementById("country-info");
 
 // selecting country details elements
@@ -55,7 +56,7 @@ async function getCountryFact(countryName) {
       throw new Error(`No Fact found about ${countryName}`);
     }
     const data = await res.json();
-    console.log(data);
+
     // extract a short interesting fact
     const sentences = data.extract.split(". ");
     const randomSentence =
@@ -171,4 +172,14 @@ searchBtn.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     searchBtn.click();
   }
+});
+
+refreshFactBtn.addEventListener("click", () => {
+  (async () => {
+    factEl.textContent = `Fetching fact about ${searchInput.value}...`;
+    const fact = await getCountryFact(searchInput.value);
+    setTimeout(() => {
+      factEl.textContent = fact;
+    }, 1000);
+  })();
 });
