@@ -19,7 +19,7 @@ const regionalBlocsEl = document.getElementById("regional-blocs");
 const neighborsEl = document.getElementById("neighbors");
 const factEl = document.getElementById("fun-fact");
 
-// fetch country data
+// function to fetch country data
 async function fetchCountry(name) {
   const errorHtml = document.querySelector(".error")?.remove();
   countryInfo.classList.add("hidden");
@@ -41,9 +41,11 @@ async function fetchCountry(name) {
       console.log(data[0]);
     }, 500);
   } catch (error) {
+    const spinnerHtml = document.querySelector(".spinner")?.remove();
     renderError(error.message, responseStatus);
   }
 }
+// function to fetch random fact about country
 
 // render data to UI
 function renderCountry(country) {
@@ -119,6 +121,9 @@ function renderCountry(country) {
   } else {
     neighborsEl.innerHTML = "<span>None</span>";
   }
+  countryInfo.classList.remove("fade-in");
+  void countryInfo.offsetWidth;
+  countryInfo.classList.add("fade-in");
 }
 
 // event listeners
