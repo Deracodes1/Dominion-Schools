@@ -31,6 +31,7 @@ async function fetchCountry(name) {
   try {
     const res = await fetch(`https://restcountries.com/v3.1/name/${name}`);
     responseStatus = res.status;
+
     if (!res.ok) {
       throw new Error("Country not found");
     }
@@ -73,7 +74,7 @@ const renderError = function (msg, status = "") {
   document.querySelector("main").insertAdjacentHTML("beforeend", errorHTML);
 };
 
-// render data to UI
+// function to render data to UI
 function renderCountry(country) {
   countryInfo.classList.remove("hidden");
 
@@ -141,7 +142,6 @@ function renderCountry(country) {
           span.style.justifyContent = "center";
           span.textContent = neighbor.name.common;
           span.classList.add("neighbor");
-          console.log(neighborFlagEl);
           span.addEventListener("click", (e) => {
             searchInput.value = e.target.textContent;
             fetchCountry(neighbor.name.common);
