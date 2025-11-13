@@ -185,8 +185,10 @@ refreshFactBtn.addEventListener("click", () => {
   (async () => {
     factEl.textContent = `Fetching fact about ${searchInput.value}...`;
     const fact = await getCountryFact(searchInput.value);
+    factEl.classList.add("fade-in-text");
     setTimeout(() => {
       factEl.textContent = fact;
+      factEl.classList.remove("fade-in-text");
     }, 1000);
   })();
 });

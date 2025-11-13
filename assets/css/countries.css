@@ -9,6 +9,8 @@ body {
   background-color: #f6f8fc;
   color: #222;
   line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .fade-in {
   opacity: 0;
@@ -183,7 +185,18 @@ body {
   font-size: 1rem;
   color: #374151;
   line-height: 1.5;
-  transition: opacity 0.5s ease;
+  transition: opacity 1 ease;
+}
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(5px);
+  animation: fadeInText 0.8s ease-out forwards;
+}
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .refreshfact-btn {
   background-color: rgb(99, 99, 247);
