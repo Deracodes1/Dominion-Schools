@@ -1,0 +1,772 @@
+{
+  "Nigeria": {
+    "name": "Bola Tinubu",
+    "title": "President",
+    "image": "https://ui-avatars.com/api?name=Bola+Tinubu&size=200&background=random"
+  },
+  "United States": {
+    "name": "Donald Trump",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/440px-Donald_Trump_official_portrait.jpg"
+  },
+  "Israel": {
+    "name": "Benjamin Netanyahu",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Benjamin_Netanyahu_2023.jpg/440px-Benjamin_Netanyahu_2023.jpg"
+  },
+  "United Kingdom": {
+    "name": "Keir Starmer",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Keir_Starmer_2023.jpg/440px-Keir_Starmer_2023.jpg"
+  },
+  "France": {
+    "name": "Emmanuel Macron",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Emmanuel_Macron_%282019-10-09%29.jpg/440px-Emmanuel_Macron_%282019-10-09%29.jpg"
+  },
+  "Germany": {
+    "name": "Olaf Scholz",
+    "title": "Chancellor",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Olaf_Scholz_2023.jpg/440px-Olaf_Scholz_2023.jpg"
+  },
+  "Canada": {
+    "name": "Justin Trudeau",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Justin_Trudeau_2023.jpg/440px-Justin_Trudeau_2023.jpg"
+  },
+  "Russia": {
+    "name": "Vladimir Putin",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Vladimir_Putin_%282023-09-12%29.jpg/440px-Vladimir_Putin_%282023-09-12%29.jpg"
+  },
+  "China": {
+    "name": "Xi Jinping",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Xi_Jinping_2023.jpg/440px-Xi_Jinping_2023.jpg"
+  },
+  "India": {
+    "name": "Narendra Modi",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Narendra_Modi_2023.jpg/440px-Narendra_Modi_2023.jpg"
+  },
+  "Japan": {
+    "name": "Shigeru Ishiba",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "South Korea": {
+    "name": "Yoon Suk Yeol",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Yoon_Suk-yeol_2023.jpg/440px-Yoon_Suk-yeol_2023.jpg"
+  },
+  "Brazil": {
+    "name": "Luiz Inácio Lula da Silva",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lula_2023.jpg/440px-Lula_2023.jpg"
+  },
+  "Mexico": {
+    "name": "Claudia Sheinbaum",
+    "title": "President",
+    "image": null
+  },
+  "Argentina": {
+    "name": "Javier Milei",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Javier_Milei_2023.jpg/440px-Javier_Milei_2023.jpg"
+  },
+  "South Africa": {
+    "name": "Cyril Ramaphosa",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cyril_Ramaphosa_2023.jpg/440px-Cyril_Ramaphosa_2023.jpg"
+  },
+  "Egypt": {
+    "name": "Abdel Fattah el-Sisi",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Abdel_Fattah_el-Sisi_2023.jpg/440px-Abdel_Fattah_el-Sisi_2023.jpg"
+  },
+  "Kenya": {
+    "name": "William Ruto",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/William_Ruto_2023.jpg/440px-William_Ruto_2023.jpg"
+  },
+  "Ghana": {
+    "name": "John Mahama",
+    "title": "President",
+    "image": null
+  },
+  "Australia": {
+    "name": "Anthony Albanese",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Anthony_Albanese_2023.jpg/440px-Anthony_Albanese_2023.jpg"
+  },
+  "Italy": {
+    "name": "Giorgia Meloni",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Giorgia_Meloni_2023.jpg/440px-Giorgia_Meloni_2023.jpg"
+  },
+  "Spain": {
+    "name": "Pedro Sánchez",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pedro_S%C3%A1nchez_2023.jpg/440px-Pedro_S%C3%A1nchez_2023.jpg"
+  },
+  "Turkey": {
+    "name": "Recep Tayyip Erdoğan",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Recep_Tayyip_Erdo%C4%9Fan_2023.jpg/440px-Recep_Tayyip_Erdo%C4%9Fan_2023.jpg"
+  },
+  "Saudi Arabia": {
+    "name": "Mohammed bin Salman",
+    "title": "Crown Prince",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mohammed_bin_Salman_2023.jpg/440px-Mohammed_bin_Salman_2023.jpg"
+  },
+  "United Arab Emirates": {
+    "name": "Mohammed bin Zayed Al Nahyan",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Mohammed_bin_Zayed_2023.jpg/440px-Mohammed_bin_Zayed_2023.jpg"
+  },
+  "Iran": {
+    "name": "Masoud Pezeshkian",
+    "title": "President",
+    "image": null
+  },
+  "Pakistan": {
+    "name": "Shehbaz Sharif",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Shehbaz_Sharif_2023.jpg/440px-Shehbaz_Sharif_2023.jpg"
+  },
+  "Indonesia": {
+    "name": "Prabowo Subianto",
+    "title": "President",
+    "image": null
+  },
+  "Philippines": {
+    "name": "Bongbong Marcos",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bongbong_Marcos_2023.jpg/440px-Bongbong_Marcos_2023.jpg"
+  },
+  "Vietnam": {
+    "name": "Tô Lâm",
+    "title": "President",
+    "image": null
+  },
+  "Thailand": {
+    "name": "Paetongtarn Shinawatra",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Poland": {
+    "name": "Donald Tusk",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Donald_Tusk_2023.jpg/440px-Donald_Tusk_2023.jpg"
+  },
+  "Ukraine": {
+    "name": "Volodymyr Zelenskyy",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Volodymyr_Zelenskyy_2023.jpg/440px-Volodymyr_Zelenskyy_2023.jpg"
+  },
+  "Netherlands": {
+    "name": "Dick Schoof",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Belgium": {
+    "name": "Alexander De Croo",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Alexander_De_Croo_2023.jpg/440px-Alexander_De_Croo_2023.jpg"
+  },
+  "Sweden": {
+    "name": "Ulf Kristersson",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Ulf_Kristersson_2023.jpg/440px-Ulf_Kristersson_2023.jpg"
+  },
+  "Norway": {
+    "name": "Jonas Gahr Støre",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Jonas_Gahr_St%C3%B8re_2023.jpg/440px-Jonas_Gahr_St%C3%B8re_2023.jpg"
+  },
+  "Denmark": {
+    "name": "Mette Frederiksen",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mette_Frederiksen_2023.jpg/440px-Mette_Frederiksen_2023.jpg"
+  },
+  "Finland": {
+    "name": "Petteri Orpo",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Switzerland": {
+    "name": "Karin Keller-Sutter",
+    "title": "President",
+    "image": null
+  },
+  "Austria": {
+    "name": "Karl Nehammer",
+    "title": "Chancellor",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Karl_Nehammer_2023.jpg/440px-Karl_Nehammer_2023.jpg"
+  },
+  "Greece": {
+    "name": "Kyriakos Mitsotakis",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Kyriakos_Mitsotakis_2023.jpg/440px-Kyriakos_Mitsotakis_2023.jpg"
+  },
+  "Portugal": {
+    "name": "Luís Montenegro",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Czech Republic": {
+    "name": "Petr Fiala",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Petr_Fiala_2023.jpg/440px-Petr_Fiala_2023.jpg"
+  },
+  "Hungary": {
+    "name": "Viktor Orbán",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Viktor_Orb%C3%A1n_2023.jpg/440px-Viktor_Orb%C3%A1n_2023.jpg"
+  },
+  "Romania": {
+    "name": "Marcel Ciolacu",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "New Zealand": {
+    "name": "Christopher Luxon",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Singapore": {
+    "name": "Lawrence Wong",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Malaysia": {
+    "name": "Anwar Ibrahim",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Anwar_Ibrahim_2023.jpg/440px-Anwar_Ibrahim_2023.jpg"
+  },
+  "Chile": {
+    "name": "Gabriel Boric",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gabriel_Boric_2023.jpg/440px-Gabriel_Boric_2023.jpg"
+  },
+  "Colombia": {
+    "name": "Gustavo Petro",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Gustavo_Petro_2023.jpg/440px-Gustavo_Petro_2023.jpg"
+  },
+  "Peru": {
+    "name": "Dina Boluarte",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Dina_Boluarte_2023.jpg/440px-Dina_Boluarte_2023.jpg"
+  },
+  "Venezuela": {
+    "name": "Nicolás Maduro",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nicol%C3%A1s_Maduro_2023.jpg/440px-Nicol%C3%A1s_Maduro_2023.jpg"
+  },
+  "Ecuador": {
+    "name": "Daniel Noboa",
+    "title": "President",
+    "image": null
+  },
+  "Bolivia": {
+    "name": "Luis Arce",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Luis_Arce_2023.jpg/440px-Luis_Arce_2023.jpg"
+  },
+  "Paraguay": {
+    "name": "Santiago Peña",
+    "title": "President",
+    "image": null
+  },
+  "Uruguay": {
+    "name": "Luis Lacalle Pou",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Luis_Lacalle_Pou_2023.jpg/440px-Luis_Lacalle_Pou_2023.jpg"
+  },
+  "Costa Rica": {
+    "name": "Rodrigo Chaves",
+    "title": "President",
+    "image": null
+  },
+  "Panama": {
+    "name": "José Raúl Mulino",
+    "title": "President",
+    "image": null
+  },
+  "Guatemala": {
+    "name": "Bernardo Arévalo",
+    "title": "President",
+    "image": null
+  },
+  "Honduras": {
+    "name": "Xiomara Castro",
+    "title": "President",
+    "image": null
+  },
+  "El Salvador": {
+    "name": "Nayib Bukele",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nayib_Bukele_2023.jpg/440px-Nayib_Bukele_2023.jpg"
+  },
+  "Nicaragua": {
+    "name": "Daniel Ortega",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Daniel_Ortega_2023.jpg/440px-Daniel_Ortega_2023.jpg"
+  },
+  "Cuba": {
+    "name": "Miguel Díaz-Canel",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Miguel_D%C3%ADaz-Canel_2023.jpg/440px-Miguel_D%C3%ADaz-Canel_2023.jpg"
+  },
+  "Dominican Republic": {
+    "name": "Luis Abinader",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Luis_Abinader_2023.jpg/440px-Luis_Abinader_2023.jpg"
+  },
+  "Jamaica": {
+    "name": "Andrew Holness",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Andrew_Holness_2023.jpg/440px-Andrew_Holness_2023.jpg"
+  },
+  "Trinidad and Tobago": {
+    "name": "Keith Rowley",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Ethiopia": {
+    "name": "Abiy Ahmed",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Abiy_Ahmed_2023.jpg/440px-Abiy_Ahmed_2023.jpg"
+  },
+  "Tanzania": {
+    "name": "Samia Suluhu Hassan",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Samia_Suluhu_Hassan_2023.jpg/440px-Samia_Suluhu_Hassan_2023.jpg"
+  },
+  "Uganda": {
+    "name": "Yoweri Museveni",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Yoweri_Museveni_2023.jpg/440px-Yoweri_Museveni_2023.jpg"
+  },
+  "Algeria": {
+    "name": "Abdelmadjid Tebboune",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Abdelmadjid_Tebboune_2023.jpg/440px-Abdelmadjid_Tebboune_2023.jpg"
+  },
+  "Morocco": {
+    "name": "Aziz Akhannouch",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Tunisia": {
+    "name": "Kais Saied",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Kais_Saied_2023.jpg/440px-Kais_Saied_2023.jpg"
+  },
+  "Libya": {
+    "name": "Abdul Hamid Dbeibeh",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Sudan": {
+    "name": "Abdel Fattah al-Burhan",
+    "title": "Chairman",
+    "image": null
+  },
+  "Senegal": {
+    "name": "Bassirou Diomaye Faye",
+    "title": "President",
+    "image": null
+  },
+  "Ivory Coast": {
+    "name": "Alassane Ouattara",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Alassane_Ouattara_2023.jpg/440px-Alassane_Ouattara_2023.jpg"
+  },
+  "Cameroon": {
+    "name": "Paul Biya",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Paul_Biya_2023.jpg/440px-Paul_Biya_2023.jpg"
+  },
+  "Zimbabwe": {
+    "name": "Emmerson Mnangagwa",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Emmerson_Mnangagwa_2023.jpg/440px-Emmerson_Mnangagwa_2023.jpg"
+  },
+  "Zambia": {
+    "name": "Hakainde Hichilema",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Hakainde_Hichilema_2023.jpg/440px-Hakainde_Hichilema_2023.jpg"
+  },
+  "Mozambique": {
+    "name": "Filipe Nyusi",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Filipe_Nyusi_2023.jpg/440px-Filipe_Nyusi_2023.jpg"
+  },
+  "Botswana": {
+    "name": "Duma Boko",
+    "title": "President",
+    "image": null
+  },
+  "Namibia": {
+    "name": "Nangolo Mbumba",
+    "title": "President",
+    "image": null
+  },
+  "Rwanda": {
+    "name": "Paul Kagame",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Paul_Kagame_2023.jpg/440px-Paul_Kagame_2023.jpg"
+  },
+  "Bangladesh": {
+    "name": "Muhammad Yunus",
+    "title": "Chief Adviser",
+    "image": null
+  },
+  "Sri Lanka": {
+    "name": "Anura Kumara Dissanayake",
+    "title": "President",
+    "image": null
+  },
+  "Myanmar": {
+    "name": "Min Aung Hlaing",
+    "title": "Chairman",
+    "image": null
+  },
+  "Afghanistan": {
+    "name": "Hibatullah Akhundzada",
+    "title": "Supreme Leader",
+    "image": null
+  },
+  "Iraq": {
+    "name": "Mohammed Shia al-Sudani",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Syria": {
+    "name": "Bashar al-Assad",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bashar_al-Assad_2023.jpg/440px-Bashar_al-Assad_2023.jpg"
+  },
+  "Jordan": {
+    "name": "Bisher Al-Khasawneh",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Lebanon": {
+    "name": "Najib Mikati",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Najib_Mikati_2023.jpg/440px-Najib_Mikati_2023.jpg"
+  },
+  "Kuwait": {
+    "name": "Ahmad Nawaf Al-Ahmad Al-Sabah",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Qatar": {
+    "name": "Tamim bin Hamad Al Thani",
+    "title": "Emir",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Tamim_bin_Hamad_Al_Thani_2023.jpg/440px-Tamim_bin_Hamad_Al_Thani_2023.jpg"
+  },
+  "Bahrain": {
+    "name": "Salman bin Hamad Al Khalifa",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Oman": {
+    "name": "Haitham bin Tariq",
+    "title": "Sultan",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Haitham_bin_Tariq_2023.jpg/440px-Haitham_bin_Tariq_2023.jpg"
+  },
+  "Yemen": {
+    "name": "Rashad al-Alimi",
+    "title": "President",
+    "image": null
+  },
+  "North Korea": {
+    "name": "Kim Jong Un",
+    "title": "Supreme Leader",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kim_Jong_Un_2023.jpg/440px-Kim_Jong_Un_2023.jpg"
+  },
+  "Mongolia": {
+    "name": "Luvsannamsrain Oyun-Erdene",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Kazakhstan": {
+    "name": "Kassym-Jomart Tokayev",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kassym-Jomart_Tokayev_2023.jpg/440px-Kassym-Jomart_Tokayev_2023.jpg"
+  },
+  "Uzbekistan": {
+    "name": "Shavkat Mirziyoyev",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Shavkat_Mirziyoyev_2023.jpg/440px-Shavkat_Mirziyoyev_2023.jpg"
+  },
+  "Azerbaijan": {
+    "name": "Ilham Aliyev",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Ilham_Aliyev_2023.jpg/440px-Ilham_Aliyev_2023.jpg"
+  },
+  "Armenia": {
+    "name": "Nikol Pashinyan",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Nikol_Pashinyan_2023.jpg/440px-Nikol_Pashinyan_2023.jpg"
+  },
+  "Georgia": {
+    "name": "Irakli Kobakhidze",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Belarus": {
+    "name": "Alexander Lukashenko",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Alexander_Lukashenko_2023.jpg/440px-Alexander_Lukashenko_2023.jpg"
+  },
+  "Moldova": {
+    "name": "Maia Sandu",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Maia_Sandu_2023.jpg/440px-Maia_Sandu_2023.jpg"
+  },
+  "Albania": {
+    "name": "Edi Rama",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Edi_Rama_2023.jpg/440px-Edi_Rama_2023.jpg"
+  },
+  "Serbia": {
+    "name": "Aleksandar Vučić",
+    "title": "President",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Aleksandar_Vu%C4%8Di%C4%87_2023.jpg/440px-Aleksandar_Vu%C4%8Di%C4%87_2023.jpg"
+  },
+  "Croatia": {
+    "name": "Andrej Plenković",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Andrej_Plenkovi%C4%87_2023.jpg/440px-Andrej_Plenkovi%C4%87_2023.jpg"
+  },
+  "Bosnia and Herzegovina": {
+    "name": "Denis Bećirović",
+    "title": "Chairman",
+    "image": null
+  },
+  "North Macedonia": {
+    "name": "Hristijan Mickoski",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Slovenia": {
+    "name": "Robert Golob",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Slovakia": {
+    "name": "Robert Fico",
+    "title": "Prime Minister",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Robert_Fico_2023.jpg/440px-Robert_Fico_2023.jpg"
+  },
+  "Bulgaria": {
+    "name": "Dimitar Glavchev",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Lithuania": {
+    "name": "Gintautas Paluckas",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Latvia": {
+    "name": "Evika Siliņa",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Estonia": {
+    "name": "Kristen Michal",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Ireland": {
+    "name": "Simon Harris",
+    "title": "Taoiseach",
+    "image": null
+  },
+  "Iceland": {
+    "name": "Bjarni Benediktsson",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Luxembourg": {
+    "name": "Luc Frieden",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Malta": {
+    "name": "Robert Abela",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Cyprus": {
+    "name": "Nikos Christodoulides",
+    "title": "President",
+    "image": null
+  },
+  "Mauritius": {
+    "name": "Navin Ramgoolam",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Seychelles": {
+    "name": "Wavel Ramkalawan",
+    "title": "President",
+    "image": null
+  },
+  "Maldives": {
+    "name": "Mohamed Muizzu",
+    "title": "President",
+    "image": null
+  },
+  "Fiji": {
+    "name": "Sitiveni Rabuka",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Papua New Guinea": {
+    "name": "James Marape",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Brunei": {
+    "name": "Hassanal Bolkiah",
+    "title": "Sultan",
+    "image": null
+  },
+  "Nepal": {
+    "name": "KP Sharma Oli",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Bhutan": {
+    "name": "Tshering Togbay",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Laos": {
+    "name": "Thongloun Sisoulith",
+    "title": "President",
+    "image": null
+  },
+  "Cambodia": {
+    "name": "Hun Manet",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Timor-Leste": {
+    "name": "Xanana Gusmão",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Somalia": {
+    "name": "Hassan Sheikh Mohamud",
+    "title": "President",
+    "image": null
+  },
+  "Madagascar": {
+    "name": "Andry Rajoelina",
+    "title": "President",
+    "image": null
+  },
+  "Angola": {
+    "name": "João Lourenço",
+    "title": "President",
+    "image": null
+  },
+  "Congo": {
+    "name": "Denis Sassou Nguesso",
+    "title": "President",
+    "image": null
+  },
+  "Democratic Republic of the Congo": {
+    "name": "Félix Tshisekedi",
+    "title": "President",
+    "image": null
+  },
+  "Gabon": {
+    "name": "Brice Oligui Nguema",
+    "title": "President",
+    "image": null
+  },
+  "Chad": {
+    "name": "Mahamat Déby",
+    "title": "President",
+    "image": null
+  },
+  "Niger": {
+    "name": "Abdourahamane Tiani",
+    "title": "President",
+    "image": null
+  },
+  "Mali": {
+    "name": "Assimi Goïta",
+    "title": "President",
+    "image": null
+  },
+  "Burkina Faso": {
+    "name": "Ibrahim Traoré",
+    "title": "President",
+    "image": null
+  },
+  "Guinea": {
+    "name": "Mamady Doumbouya",
+    "title": "President",
+    "image": null
+  },
+  "Sierra Leone": {
+    "name": "Julius Maada Bio",
+    "title": "President",
+    "image": null
+  },
+  "Liberia": {
+    "name": "Joseph Boakai",
+    "title": "President",
+    "image": null
+  },
+  "Benin": {
+    "name": "Patrice Talon",
+    "title": "President",
+    "image": null
+  },
+  "Togo": {
+    "name": "Faure Gnassingbé",
+    "title": "President",
+    "image": null
+  },
+  "Malawi": {
+    "name": "Lazarus Chakwera",
+    "title": "President",
+    "image": null
+  },
+  "Lesotho": {
+    "name": "Sam Matekane",
+    "title": "Prime Minister",
+    "image": null
+  },
+  "Eswatini": {
+    "name": "Mswati III",
+    "title": "King",
+    "image": null
+  },
+  "Turkmenistan": {
+    "name": "Serdar Berdimuhamedow",
+    "title": "President",
+    "image": null
+  },
+  "Kyrgyzstan": {
+    "name": "Sadyr Japarov",
+    "title": "President",
+    "image": null
+  },
+  "Tajikistan": {
+    "name": "Emomali Rahmon",
+    "title": "President",
+    "image": null
+  }
+}

@@ -167,6 +167,29 @@ body {
 .neighbor-flag {
   width: 30px;
 }
+/* leader section */
+.leader-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: fadeIn 1s ease-in forwards;
+}
+.leader-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.leader-content img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 /* country fact-box styling */
 .fact-box {
   background-color: #e7f0ff;
@@ -191,6 +214,16 @@ body {
   opacity: 0;
   transform: translateY(5px);
   animation: fadeInText 0.8s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes fadeInText {
   to {

@@ -18,7 +18,22 @@ const callingCodeEl = document.getElementById("calling-Code");
 const timzoneEl = document.getElementById("timezone");
 const regionalBlocsEl = document.getElementById("regional-blocs");
 const neighborsEl = document.getElementById("neighbors");
+const leaderSection = document.querySelector(".leader-section");
+const leaderImg = document.getElementById("leader-img");
+const leaderTitle = document.getElementById("leader-title");
+const leaderName = document.getElementById("leader-name");
 const factEl = document.getElementById("fun-fact");
+
+// function to get country's leader data
+async function getLeaderInfo(countryName) {
+  try {
+    const response = await fetch("leaders.json");
+    const leadersData = await response.json();
+    return leadersData[countryName] || null;
+  } catch (error) {
+    return null;
+  }
+}
 
 // function to fetch country data
 async function fetchCountry(name) {
@@ -31,7 +46,6 @@ async function fetchCountry(name) {
   try {
     const res = await fetch(`https://restcountries.com/v3.1/name/${name}`);
     responseStatus = res.status;
-
     if (!res.ok) {
       throw new Error("Country not found");
     }
@@ -156,6 +170,26 @@ function renderCountry(country) {
   } else {
     neighborsEl.innerHTML = "<span>None</span>";
   }
+  // fetching and formatting the country's leader info
+  (async () => {
+    const leaderInfo = await getLeaderInfo(country.name.common);
+    if (leaderInfo) {
+      leaderTitle.textContent = leaderInfo.title;
+      leaderName.textContent = leaderInfo.name;
+      const leaderCompleteNames = leaderInfo.name.split(" ");
+      const leaderFirstName = leaderCompleteNames[0];
+      const leaderLastName =
+        leaderCompleteNames[leaderCompleteNames.length - 1];
+      leaderImg.src = `https://ui-avatars.com/api?name=${leaderFirstName.slice(
+        0,
+        1
+      )}+${leaderLastName.slice(0, 1)}&size=200&background=random`;
+      leaderInfo.image;
+    } else {
+      leaderTitle.textContent = "";
+      leaderName.textContent = "could not find anything";
+    }
+  })();
 
   // fetching and formatting a fun fact about the country
   (async () => {
