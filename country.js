@@ -34,7 +34,18 @@ async function getLeaderInfo(countryName) {
     return null;
   }
 }
-
+// function to format the country population
+function formatPopulation(number) {
+  if (number >= 1_000_000_000) {
+    return `${(number / 1_000_000_000).toFixed(2)} billion people`;
+  } else if (number >= 1_000_000) {
+    return `${(number / 1_000_000).toFixed(2)} million people`;
+  } else if (number >= 1_000) {
+    return `${(number / 1_000).toFixed(2)} thousand people`;
+  } else {
+    return `${number} people`;
+  }
+}
 // function to fetch country data
 async function fetchCountry(name) {
   const errorHtml = document.querySelector(".error")?.remove();
@@ -100,7 +111,7 @@ function renderCountry(country) {
   subregonEl.textContent = country.subregion || "N/A";
 
   // formatting the country's population
-  populationEl.textContent = country.population?.toLocaleString() || "N/A";
+  populationEl.textContent = formatPopulation(country.population) || "N/A";
 
   // formatting the country's languages
   languageEl.innerHTML = "";
