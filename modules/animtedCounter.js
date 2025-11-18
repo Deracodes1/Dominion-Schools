@@ -14,6 +14,7 @@ export function animatedCount() {
     animateCounter(existenceNumbers, 24);
     observer.unobserve(entry.target);
   };
+
   const observeAnimatedText = new IntersectionObserver(counterAnimation, {
     root: null,
     threshold: 1,

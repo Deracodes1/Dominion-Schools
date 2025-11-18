@@ -24,6 +24,19 @@ const leaderTitle = document.getElementById("leader-title");
 const leaderName = document.getElementById("leader-name");
 const factEl = document.getElementById("fun-fact");
 
+// once the page loads. get the user's location and display the country's data
+(async function () {
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    const data = await res.json();
+    const country = data.country_name;
+
+    await fetchCountry(country);
+  } catch (error) {
+    console.error(`could'nt get your location ${error.message}`);
+  }
+})();
+
 // function to get country's leader data
 async function getLeaderInfo(countryName) {
   try {
