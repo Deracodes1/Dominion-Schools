@@ -19,7 +19,7 @@ refreshBtn.addEventListener("click", async (e) => {
     }, 300);
   } catch (error) {
     setTimeout(() => {
-      adviceTextEl.textContent = `${error.message}. Try again!`;
+      adviceTextEl.textContent = `${error.message} advice. Try again!`;
     }, 500);
   }
 });

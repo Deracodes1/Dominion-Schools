@@ -37,7 +37,7 @@ const factEl = document.getElementById("fun-fact");
     await fetchCountry(country);
   } catch (error) {
     renderError(
-      `${error.message}. Couldn't get your current country. but you can try searching any country of your choice`,
+      `Couldn't get your current country. please check your internet connection and can try searching any country of your choice`,
       404
     );
   }
