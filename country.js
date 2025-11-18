@@ -28,12 +28,18 @@ const factEl = document.getElementById("fun-fact");
 (async function () {
   try {
     const res = await fetch("https://ipapi.co/json/");
+    if (!res.ok) {
+      throw new Error(`trouble getting your current location`);
+    }
     const data = await res.json();
     const country = data.country_name;
 
     await fetchCountry(country);
   } catch (error) {
-    console.error(`could'nt get your location ${error.message}`);
+    renderError(
+      `${error.message}. Couldn't get your current country. but you can try searching any country of your choice`,
+      404
+    );
   }
 })();
 
@@ -63,6 +69,8 @@ function formatPopulation(number) {
 async function fetchCountry(name) {
   const errorHtml = document.querySelector(".error")?.remove();
   countryInfo.classList.add("hidden");
+  const spinnerHtml = document.querySelector(".spinner")?.remove();
+
   const loadSpinner = '<div class="spinner"></div>';
 
   document.querySelector("main").insertAdjacentHTML("beforeend", loadSpinner);
@@ -80,7 +88,11 @@ async function fetchCountry(name) {
     }, 1000);
   } catch (error) {
     const spinnerHtml = document.querySelector(".spinner")?.remove();
-    renderError(error.message, responseStatus);
+    renderError(
+      `${error.message}. Try
+    searching again.`,
+      responseStatus
+    );
   }
 }
 // function to fetch random fact about country
@@ -107,8 +119,7 @@ async function getCountryFact(countryName) {
 // function to render error message
 const renderError = function (msg, status = "") {
   countryInfo.classList.add("hidden");
-  const errorHTML = `<p class="error" style="color:red; text-align:center; font-weight:600;">${status}: ${msg}. Try
-    searching again.</P>`;
+  const errorHTML = `<p class="error" style="color:red; text-align:center; font-weight:600;">${status}: ${msg}.</P>`;
   document.querySelector("main").insertAdjacentHTML("beforeend", errorHTML);
 };
 
