@@ -65,6 +65,43 @@ function formatPopulation(number) {
     return `${number} people`;
   }
 }
+// function to generate Avatar
+function generateAvatar(name, options = {}) {
+  const words = name.trim().split(/\s+/);
+
+  // extract first and last name initials
+  let initials;
+  if (words.length === 1) {
+    initials = words[0].charAt(0).toUpperCase();
+  } else {
+    initials =
+      words[0].charAt(0).toUpperCase() +
+      words[words.length - 1].charAt(0).toUpperCase();
+  }
+
+  // default options
+  const {
+    size = 200,
+    background = "random",
+    color = "fff",
+    bold = "false",
+    rounded = "false",
+  } = options;
+
+  // building the query params
+  const params = new URLSearchParams({
+    name: initials,
+    size: size.toString(),
+    color: color,
+    bold: bold.toString(),
+    rounded: rounded.toString(),
+  });
+  if (background) {
+    params.append("background", background);
+  }
+  // returning the complete url
+  return `https://ui-avatars.com/api/?${params.toString()}`;
+}
 // function to fetch country data
 async function fetchCountry(name) {
   const errorHtml = document.querySelector(".error")?.remove();
@@ -211,15 +248,7 @@ function renderCountry(country) {
     if (leaderInfo) {
       leaderTitle.textContent = leaderInfo.title;
       leaderName.textContent = leaderInfo.name;
-      const leaderCompleteNames = leaderInfo.name.split(" ");
-      const leaderFirstName = leaderCompleteNames[0];
-      const leaderLastName =
-        leaderCompleteNames[leaderCompleteNames.length - 1];
-      leaderImg.src = `https://ui-avatars.com/api?name=${leaderFirstName.slice(
-        0,
-        1
-      )}+${leaderLastName.slice(0, 1)}&size=200&background=random`;
-      leaderInfo.image;
+      leaderImg.src = generateAvatar(leaderInfo.name);
     } else {
       leaderTitle.textContent = "";
       leaderName.textContent = "could not find anything";

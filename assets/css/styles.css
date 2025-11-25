@@ -551,7 +551,6 @@ body {
     flex-direction: column;
     padding: 0;
     justify-content: space-between;
-    /* padding: 2rem 4rem; */
   }
   .nav {
     display: flex;
@@ -560,7 +559,7 @@ body {
     position: fixed;
     height: 1000dvh;
     padding-bottom: 40px;
-    width: 350px;
+    width: 94%;
     top: 100%;
     left: 0px;
     align-content: flex-start;
